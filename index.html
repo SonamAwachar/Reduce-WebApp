@@ -2,7 +2,17 @@
 <html lang = "en">
 <head>
   <link rel="stylesheet" type="text/css" href="style.css"/>
-  <h1 class = "center">Usage Time</h1>
+
+  <h1 class = "center">Usage Time
+  <div class="dropdown">
+  <button class="dropbtn">Time Frame</button>
+  <div class="dropdown-content">
+    <a onclick="daily();">Daily</a>
+    <a onclick="weekly();">Weekly</a>
+    <a onclick= "monthly();">Monthly</a>
+  </div>
+</div>
+</h1>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript">
 google.charts.load('current', {packages: ['corechart', 'line']});
@@ -38,3 +48,28 @@ function drawLineColors() {
 <div id="chart_div" class = "graph"></div>
 </body>
 </html>
+
+<!-- <!DOCTYPE HTML>
+<html lang = "en">
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+
+  <h1 class = "center">Usage Time
+  <div class="dropdown">
+  <button class="dropbtn">Time Frame</button>
+  <div class="dropdown-content">
+    <a onclick="daily();">Daily</a>
+    <a onclick="weekly();">Weekly</a>
+    <a onclick= "monthly();">Monthly</a>
+  </div>
+</div>
+</h1>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+
+<script type="text/javascript" src="chart.js"></script>
+<div id="chart_div" class = "graph"></div>
+</body>
+</html>
+-->
